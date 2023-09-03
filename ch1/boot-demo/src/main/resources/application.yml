@@ -1,0 +1,38 @@
+# 默认配置
+author:
+  name: icexmoon
+  age: 18
+  hobbies:
+    - music
+    - draw
+    - travel
+
+spring:
+  profiles:
+    active: ${profiles.active}
+# 开发环境
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+server:
+  port: 80
+
+# 测试环境
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+server:
+  port: 81
+
+# 生产环境
+---
+spring:
+  config:
+    activate:
+      on-profile: prd
+server:
+  port: 82

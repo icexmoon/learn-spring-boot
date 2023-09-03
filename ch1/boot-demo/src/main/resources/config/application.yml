@@ -1,0 +1,8 @@
+# 默认配置
+author:
+  name: jackchen
+  age: 25
+  hobbies:
+    - music
+    - draw
+    - travel
